@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+
+.introduction-page{
+    height: 80vh;
+    background-color: #060606;
+    display: flex;
+}
+
+.intro-text{
+    width: 50%;
+    margin: 5%;
+    background-color: transparent;
+    height: 80%;
+    padding: 5%;
+    font-family: cabin, sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+.intro-photo{
+    height: 80%;
+    margin: 5% 5% 5% 0;
+    box-shadow: 10px 10px #050505;
+}

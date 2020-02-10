@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 100vh;
+}
+
+.black{
+    position: absolute;
+    background-color: black;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.navigation{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 1%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo{
+    height: 100%;
+    left: 0;
+}
+
+nav{
+    text-align: right;
+    width: 50%;
+    margin-left: 40%;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    align-items: center;
+}
+.nav-bar{
+    display: flex;
+    list-style-type: none;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.background{
+    height: 100vh;
+    width: 100%;
+}
+
+.mid-logo{
+    height: 40vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.border{
+    width: 40%;
+    border: 10px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 10px #262626;
+}
+
+.border:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .border{
+        width: 70%;
+    }
+
+    .mid-logo{
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .border{
+        width: 50%;
+    }
+
+    .mid-logo{
+        height: 20vh;
+    }
+
+}

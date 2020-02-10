@@ -1,0 +1,49 @@
+.samenwerkingen{
+    height: 60vh;
+    background-color: #090909;
+    padding: 5%;
+}
+
+.samenwerkingen-kop{
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.bedrijven{
+    display: flex;
+    flex-direction: column;
+}
+
+.bedrijven-row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: calc(100%/5) calc(100%/5) calc(100%/5) calc(100%/5) calc(100%/5);
+    height: 10vh;
+    margin: 1% 0 ;
+}
+
+.bedrijf{
+    margin: 5%;
+    padding: 5%;
+    filter: gray();
+    -webkit-filter: grayscale(1);
+    transition: .1s;
+}
+
+.bedrijf:hover{
+    filter: none;
+    transition: .1s;
+}
+
+.opdracht{
+    height: 10vh;
+    width: 100%;
+}
+
+.small{
+ text-align: center;
+    width: 50%;
+    margin-left: 20%;
+}

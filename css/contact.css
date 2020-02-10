@@ -1,0 +1,23 @@
+.contact-section{
+    width: 80%;
+    margin: auto;
+    background-color: black;
+}
+
+.contact-info{
+    background-color: #0a0a0a;
+    color: white;
+}
+
+.fa-paper-plane{
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #0a0a0a;
+    color: white;
+    margin: auto auto auto 92%;
+}
+
+.fa-paper-plane:hover{
+    cursor: pointer;
+}
