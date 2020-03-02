@@ -37,6 +37,7 @@
 @media screen and (max-width: 1000px){
     .introduction-page{
         display: block;
+        height: 40rem;
     }
 
     .intro-text{
