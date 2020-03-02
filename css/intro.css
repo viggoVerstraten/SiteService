@@ -7,8 +7,9 @@
 }
 
 .intro-text{
-    width: 50%;
-    margin: 5%;
+    display: flex;
+    width: 100%;
+    margin: 0 5% 5% 0;
     background-color: transparent;
     height: 80%;
     padding: 5%;
@@ -18,7 +19,42 @@
 }
 
 .intro-photo{
-    height: 80%;
+    height: 40%;
     margin: 5% 5% 5% 0;
     box-shadow: 10px 10px #050505;
+}
+
+.intro-text>p{
+    flex: 2;
+    padding: 50px;
+}
+
+.intro-text>img{
+    flex: 1;
+    height: 70%;
+}
+
+@media screen and (max-width: 1000px){
+    .introduction-page{
+        display: block;
+    }
+
+    .intro-text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-text>p{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .intro-text>img{
+        width: 95%;
+        height: 40%;
+        margin: 0 0 0 5%;
+    }
+
+
+
 }

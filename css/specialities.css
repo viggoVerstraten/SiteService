@@ -1,6 +1,6 @@
 .specialties{
     display: grid;
-    height: 40vh;
+    height: 20rem;
     background-color: black;
     grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
 }
@@ -25,5 +25,12 @@
     font-size: 1.2rem;
     color: white;
     height: 50%;
+}
 
+@media screen and (max-width: 980px) {
+    .specialties{
+        display: grid;
+        height: 80rem;
+        grid-template-columns: 100%;
+    }
 }

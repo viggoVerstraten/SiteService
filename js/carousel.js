@@ -91,21 +91,14 @@ class Carousel {
         });
     }
 
-    // Construct the carousel controls
-    setControls() {
-        this.carouselControls.forEach(control => {
-            galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
-        });
 
-        !!galleryControlsContainer.childNodes[0] ? galleryControlsContainer.childNodes[0].innerHTML = this.carouselControls[0] : null;
-        !!galleryControlsContainer.childNodes[1] ? galleryControlsContainer.childNodes[1].innerHTML = this.carouselControls[1] : null;
-    }
 
     // Add a click event listener to trigger setCurrentState method to rearrange carousel
     useControls() {
         const triggers = [...galleryControlsContainer.childNodes];
+        const sides = [document.getElementById('side-left'), document.getElementById('side-right')];
 
-        triggers.forEach(control => {
+        sides.forEach(control => {
             control.addEventListener('click', () => {
                 const target = control;
                 const selectedItem = document.querySelectorAll('.gallery-item-selected');
@@ -123,7 +116,6 @@ class Carousel {
 
 const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
 
-exampleCarousel.setControls();
 exampleCarousel.setNav();
 exampleCarousel.setInitialState();
 exampleCarousel.useControls();

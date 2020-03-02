@@ -1,5 +1,6 @@
 .gallery {
   width: 100%;
+  margin-top: -30rem;
 }
 
 .gallery-container {
@@ -25,7 +26,7 @@
   opacity: 1;
   left: 50%;
   transform: translateX(-50%);
-  width: 500px;
+  width: 300px;
   z-index: 2;
 }
 
@@ -150,7 +151,50 @@
 }
 
 .projects{
-  background-color: #050505;
-  height: 50vh;
+  background-color: #0f0f0f;
+  height: 30rem;
   align-items: center;
+}
+
+.sides{
+  position: relative;
+  height: 30rem;
+  z-index: 200;
+  background-color: transparent;
+  color: transparent;
+  display: flex;
+  width: 100%;
+}
+.side-left{
+  width: 50%;
+  height: 30rem;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 980px) {
+  .gallery-item.gallery-item-selected {
+    height: 200px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    z-index: 2;
+  }
+
+  .gallery-item.gallery-item-previous,
+  .gallery-item.gallery-item-next {
+    height: 150px;
+    opacity: 1;
+    width: 150px;
+    z-index: 1;
+  }
+
+  .gallery-item {
+    height: 100px;
+    opacity: .4;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 100px;
+    z-index: 0;
+  }
 }
