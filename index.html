@@ -138,51 +138,53 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="card-body form">
-                        <h3 class="mt-4"><i class="fas fa-envelope pr-2"></i>Write me:</h3>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="form-contact-name" class="form-control">
-                                    <label for="form-contact-name" class="">Your name</label>
+                        <form action="post" action="index.php">
+                            <h3 class="mt-4"><i class="fas fa-envelope pr-2"></i>Write me:</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="form-contact-name" class="form-control">
+                                        <label for="form-contact-name" name="name" id="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="form-contact-email" class="form-control">
+                                        <label for="form-contact-email" name="mail" id="mail" class="">Your email</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="form-contact-email" class="form-control">
-                                    <label for="form-contact-email" class="">Your email</label>
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="form-contact-phone" class="form-control">
+                                        <label for="form-contact-phone" name="phone" id="phone" class="">Your phone</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="form-contact-company" class="form-control">
+                                        <label for="form-contact-company" name="subject" id="subject" class="">Your Subject</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
 
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="form-contact-phone" class="form-control">
-                                    <label for="form-contact-phone" class="">Your phone</label>
-                                </div>
-                            </div>
+                            <div class="row">
 
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="form-contact-company" class="form-control">
-                                    <label for="form-contact-company" class="">Your Subject</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
                                     <textarea id="form-contact-message" class="form-control md-textarea"
                                               rows="3"></textarea>
-                                    <label for="form-contact-message">Your message</label>
-                                    <a class="btn-floating btn-lg ">
-                                        <i class="far fa-paper-plane"></i>
-                                    </a>
+                                        <label for="form-contact-message" name="message" id="message">Your message</label>
+                                        <a class="btn-floating btn-lg " type="submit" name="submit">
+                                            <i class="far fa-paper-plane"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
 
@@ -194,32 +196,32 @@
                                 <p><i class="fas fa-map-marker-alt pr-2"></i>Nederland, Purmerend</p>
                             </li>
                             <li>
-                                <p><i class="fas fa-phone pr-2"></i>+ 31 6 37 40 47 04</p>
+                                <p><i class="fas fa-phone pr-2"></i><a href="tel:+31637404704">+ 31 6 37 40 47 04</a></p>
                             </li>
                             <li>
-                                <p><i class="fas fa-envelope pr-2"></i>info@siteenservice.nl</p>
+                                <p><i class="fas fa-envelope pr-2"></i><a href="mailto:info@siteenservice.nl">info@siteenservice.nl</a></p>
                             </li>
                         </ul>
                         <hr class="hr-light my-4">
                         <ul class="list-inline text-center list-unstyled">
                             <li class="list-inline-item">
                                 <a class="p-2 fa-lg tw-ic">
-                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-facebook" id="facebook"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="p-2 fa-lg li-ic">
-                                    <i class="fab fa-linkedin-in"> </i>
+                                    <i class="fab fa-linkedin-in" id="linked-in"> </i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="p-2 fa-lg ins-ic">
-                                    <i class="fab fa-instagram"> </i>
+                                    <i class="fab fa-instagram" id="instagram"> </i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="p-2 fa-lg ins-ic">
-                                    <i class="fab fa-whatsapp"> </i>
+                                    <i class="fab fa-whatsapp" id="whatsapp"> </i>
                                 </a>
                             </li>
                         </ul>
@@ -240,6 +242,7 @@
 
 
 <script src="js/carousel.js"></script>
+<script src="js/app.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
