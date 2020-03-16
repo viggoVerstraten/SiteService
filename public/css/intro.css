@@ -34,7 +34,7 @@
     height: 15rem;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 980px){
     .introduction-page{
         display: block;
         height: 40rem;
@@ -52,9 +52,9 @@
     }
 
     .intro-text>img{
-        width: 95%;
+        width: 20rem;
         height: 12rem;
-        margin: 0 0 0 5%;
+        margin: auto;
     }
 
 

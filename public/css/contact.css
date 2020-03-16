@@ -1,0 +1,45 @@
+.contact-section{
+    width: 70%;
+    margin: auto;
+    background-color: black;
+}
+
+.contact-border{
+    border-radius: 50px;
+}
+
+.background-black{
+    background-color: black;
+    margin-top: 0 !important;
+}
+
+main{
+    background-color: black;
+}
+
+.contact-info{
+    background-color: #666668;
+    color: white;
+}
+
+.fa-paper-plane{
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #0a0a0a;
+    color: white;
+}
+
+.fa-paper-plane:hover{
+    cursor: pointer;
+}
+
+.orange-color{
+    color: #f78905;
+    background-color: transparent !important;
+}
+
+.orange-color:hover{
+    transition: .2s;
+    color: #cd6705;
+}

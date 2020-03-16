@@ -4,11 +4,29 @@
     padding: 5%;
 }
 
+.orange-border{
+    width: 100%;
+    background-color: #ff8904;
+    height: .5rem;
+}
+
 .samenwerkingen-kop {
     color: white;
     text-align: center;
     width: 100%;
-    margin-bottom: 2.5%;
+    margin-bottom: 20px;
+}
+
+.projects-kop{
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.projects-text{
+    padding-top: 2rem;
+
 }
 
 .bedrijven {
@@ -22,21 +40,20 @@
     grid-template-columns: calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5);
     height: 150px;
     margin: 1% 0;
+    align-items: center;
+    text-align: center;
 }
+
 
 .bedrijf {
     margin: 5%;
     padding: 5%;
-    filter: gray();
-    -webkit-filter: grayscale(1);
     transition: .1s;
     align-items: center;
+
 }
 
-.bedrijf:hover {
-    filter: none;
-    transition: .1s;
-}
+
 
 .opdracht {
     height: 120px;
@@ -47,13 +64,12 @@
     height: 120px;
     width: 120px;
     text-align: center;
-    margin-left: 20%;
+    margin-left: auto;
 }
 
 .low{
     height: 70px;
     width: 250px;
-    transform: translateY(50%);
 }
 
 .wide {
@@ -65,18 +81,30 @@
 }
 
 @media screen and (max-width: 980px) {
+    .samenwerkingen{
+        height: 50rem;
+    }
+
     .low{
         transform: translateY(0);
     }
     .bedrijven-row {
-        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
-        height: 10vh;
+        display: none;
     }
 
-    .opdracht {
-        height: 80px;
-        width: 80px;
+    .opdracht-square {
+        height: 100px;
+        width: 100px;
         align-items: center;
+    }
+
+    .opdracht-recht{
+        height: 80px;
+        width: 140px;
+    }
+
+    .long{
+        width: 200px;
     }
 
     .no-wide {
@@ -94,6 +122,6 @@
     }
 
     .samenwerkingen-kop {
-        font-size: 24px;
+        font-size: 2.5rem;
     }
 }

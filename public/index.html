@@ -31,28 +31,43 @@
     <div class="navigation">
         <div class="logo-left">
             <img src="img/SiteserviceLogokopie.png" alt="" class="logo">
-
         </div>
 
 
         <nav>
             <ul class="nav-bar">
-                <li><a href="index.html" class="nav-bar-li">Home</a></li>
-                <li><a href="about.html" class="nav-bar-li">About</a></li>
+                <li class="nav-bar-li" id="home">Home</li>
+                <li class="nav-bar-li" id="service">Services</li>
+                <li class="nav-bar-li" id="project">Projects</li>
+                <li class="nav-bar-li" id="partners">Partners</li>
+                <li class="nav-bar-li" id="contact-section">Contact</li>
             </ul>
-            <ul class="burger-ul">
-                <li class="burger-line"><a href="#"></a></li>
-                <li class="burger-line"><a href="#"></a></li>
-                <li class="burger-line"><a href="#"></a></li>
+            <ul class="burger-ul" id="burger">
+                <li class="burger-line" id="line-1"><a href="#"></a></li>
+                <li class="burger-line" id="line-2"><a href="#"></a></li>
+                <li class="burger-line" id="line-3"><a href="#"></a></li>
             </ul>
         </nav>
+
+        <section class="burger-menu" id="burger-menu">
+            <ul class="burger-li">
+                <li class="nav-bar-li" id="home-burger">Home</li>
+                <li class="nav-bar-li" id="service-burger">Services</li>
+                <li class="nav-bar-li" id="project-burger">Projects</li>
+                <li class="nav-bar-li" id="partners-burger">Partners</li>
+                <li class="nav-bar-li" id="contact-burger">Contact</li>
+            </ul>
+        </section>
     </div>
-    <div class="border"></div>
+    <img src="img/theater-432045_1280-4.jpg" alt="" class="background">
+    <div class="border-logo"></div>
 
     <img src="img/Outlook-byvoaqss.png" alt="" class="mid-logo">
 
 
 </header>
+<div class="orange-border"></div>
+
 <main>
     <div class="introduction-page" id="introductie">
         <div class="intro-text">
@@ -64,79 +79,128 @@
 
         </div>
     </div>
+    <div class="orange-border"></div>
 
-    <div class="specialties">
-        <div class="first">
-            <h2 class="dienst-titel"><img src="img/logoHospi.jpg" alt="" class="dienst-logo"></h2>
-            <ul class="services">
-                <li>Barhoofd</li>
-                <li>Barmedewerker</li>
-                <li>Partycateringmedewerker</li>
-                <li>Artisthandling</li>
-            </ul>
+    <div class="specialties" id="services-page">
+        <div class="projects-kop">
+            <h1 class="projects-text">Services</h1>
         </div>
-        <div class="first">
-            <h2 class="dienst-titel"><img src="img/production.jpg" alt="" class="dienst-logo"></h2>
-            <ul class="services">
-                <li>Producent</li>
-                <li>Eventcoördinator</li>
-                <li>Horecacoördinator</li>
-            </ul>
+        <div class="service-grid">
+            <div class="first">
+                <h2 class="dienst-titel"><img src="img/logoHospi.jpg" alt="" class="dienst-logo"></h2>
+                <ul class="services">
+                    <li>Barhoofd</li>
+                    <li>Barmedewerker</li>
+                    <li>Partycateringmedewerker</li>
+                    <li>Artisthandling</li>
+                </ul>
+            </div>
+            <div class="first">
+                <h2 class="dienst-titel"><img src="img/production.jpg" alt="" class="dienst-logo"></h2>
+                <ul class="services">
+                    <li>Producent</li>
+                    <li>Eventcoördinator</li>
+                    <li>Horecacoördinator</li>
+                </ul>
+
+            </div>
+            <div class="first">
+                <h2 class="dienst-titel"><img src="img/sitecrew.jpg" alt="" class="dienst-logo"></h2>
+                <ul class="services">
+                    <li>Medewerker siteproductie</li>
+                    <li>Runner</li>
+                </ul>
+            </div>
 
         </div>
-        <div class="first">
-            <h2 class="dienst-titel"><img src="img/sitecrew.jpg" alt="" class="dienst-logo"></h2>
-            <ul class="services">
-                <li>Medewerker siteproductie</li>
-                <li>Runner</li>
-
-            </ul>
-        </div>
-
     </div>
-    <div class="projects">
+
+    <div class="orange-border"></div>
+
+    <div class="projects" id="projects-page">
+        <div class="projects-kop">
+            <h1 class="projects-text">Projects</h1>
+        </div>
         <div class="sides">
-            <div class="side-left" id="side-left"></div>
-            <div class="side-left" id="side-right"></div>
+            <div class="side" id="side-left"></div>
+            <div class="side-under" id="side-middle"></div>
+            <div class="side" id="side-right"></div>
         </div>
         <div class="gallery">
             <div class="gallery-container">
-                <img class="gallery-item" src="img/roytour.jpg">
-                <img class="gallery-item" src="img/roylive.jpg">
-                <img class="gallery-item" src="img/mysterie.png">
-                <img class="gallery-item" src="img/outdoor.jpg">
-                <img class="gallery-item" src="img/pride.jpg">
+                <div class="gallery-item"><img src="img/roytour.jpg" alt="Production" class="gallery-image">
+                    <div class="text">
+                        <div class="text-box-hover">
+                            <h2 class="title">Royalistiq tour</h2>
+                            <h4 class="function">Producent</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item"><img src="img/roylive.jpg" alt="Event Production" class="gallery-image">
+                    <div class="text">
+                        <div class="text-box-hover">
+                            <h2 class="title">Royalistiq live</h2>
+                            <h4 class="function">Eventmanager</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item"><img src="img/mysterie.png" alt="Sitecrew" class="gallery-image">
+                    <div class="text">
+                        <div class="text-box-hover">
+                            <h2 class="title">Mysteryland 2019</h2>
+                            <h4 class="function">Sitecrew</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item"><img src="img/outdoor.jpg" alt="Artist handling" class="gallery-image">
+                    <div class="text">
+                        <div class="text-box-hover">
+                            <h2 class="title">Outdoor Stereo Festival 2019</h2>
+                            <h4 class="function">Artist handling</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item"><img src="img/pride.jpg" alt="Event production" class="gallery-image">
+                    <div class="text">
+                        <div class="text-box-hover">
+                            <h2 class="title">PRIDE Rembrandtplein 2019</h2>
+                            <h4 class="function">Horeca coördinator</h4>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="gallery-controls"></div>
         </div>
     </div>
-    <div class="samenwerkingen">
-        <h1 class="samenwerkingen-kop">Samenwerkingen</h1>
+    <div class="orange-border"></div>
+    <div class="samenwerkingen" id="partners-page">
+        <h1 class="samenwerkingen-kop">Partners</h1>
         <div class="bedrijven">
+            <div class="bedrijven-row-4">
+                <div class="bedrijf"><img src="img/logos/zahm.png" alt="" class="opdracht-recht"></div>
+                <div class="bedrijf"><img src="img/logos/cateringclub.png" alt="" class="opdracht-square small"></div>
+                <div class="bedrijf"><img src="img/logos/fantube.png" alt="" class="opdracht-recht long low"></div>
+                <div class="bedrijf"><img src="img/logos/solid_event.png" alt="" class="opdracht-recht low long"></div>
+            </div>
+
             <div class="bedrijven-row">
                 <div class="bedrijf"><img src="img/logos/borrel.jpg" alt="" class="opdracht small"></div>
                 <div class="bedrijf"><img src="img/logos/brownys.png" alt="" class="opdracht small"></div>
-                <div class="bedrijf"><img src="img/logos/cateringclub.png" alt="" class="opdracht small"></div>
                 <div class="bedrijf"><img src="img/logos/bbass.png" alt="" class="opdracht no-wide"></div>
-                <div class="bedrijf"><img src="img/logos/fantube.png" alt="" class="opdracht no-wide low"></div>
-            </div>
-            <div class="bedrijven-row-wide">
-                <div class="bedrijf"><img src="img/logos/bbass.png" alt="" class="opdracht wide"></div>
-                <div class="bedrijf"><img src="img/logos/fantube.png" alt="" class="opdracht wide"></div>
-            </div>
-            <div class="bedrijven-row">
-                <div class="bedrijf"><img src="img/logos/solid_event.png" alt="" class="opdracht low"></div>
                 <div class="bedrijf"><img src="img/logos/Young-Label.png" alt="" class="opdracht"></div>
-                <div class="bedrijf"><img src="img/logos/zahm.png" alt="" class="opdracht"></div>
                 <div class="bedrijf"><img src="img/logos/eventcare.png" alt="" class="opdracht small"></div>
             </div>
         </div>
     </div>
+    <div class="orange-border">
 
-    <section class="contact-section my-5 contact-section">
+    </div>
+
+    <section class="contact-section my-5 contact-section" id="contact-page">
         <div class="card">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8 contact-border">
                     <div class="card-body form">
                         <form action="post" action="index.php">
                             <h3 class="mt-4"><i class="fas fa-envelope pr-2"></i>Write me:</h3>
@@ -144,13 +208,15 @@
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
                                         <input type="text" id="form-contact-name" class="form-control">
-                                        <label for="form-contact-name" name="name" id="name" class="">Your name</label>
+                                        <label for="form-contact-name" name="name" id="name" class="">Your
+                                            name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
                                         <input type="text" id="form-contact-email" class="form-control">
-                                        <label for="form-contact-email" name="mail" id="mail" class="">Your email</label>
+                                        <label for="form-contact-email" name="mail" id="mail" class="">Your
+                                            email</label>
                                     </div>
                                 </div>
                             </div>
@@ -159,14 +225,16 @@
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
                                         <input type="text" id="form-contact-phone" class="form-control">
-                                        <label for="form-contact-phone" name="phone" id="phone" class="">Your phone</label>
+                                        <label for="form-contact-phone" name="phone" id="phone" class="">Your
+                                            phone</label>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
                                         <input type="text" id="form-contact-company" class="form-control">
-                                        <label for="form-contact-company" name="subject" id="subject" class="">Your Subject</label>
+                                        <label for="form-contact-company" name="subject" id="subject" class="">Your
+                                            Subject</label>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +245,8 @@
                                     <div class="md-form mb-0">
                                     <textarea id="form-contact-message" class="form-control md-textarea"
                                               rows="3"></textarea>
-                                        <label for="form-contact-message" name="message" id="message">Your message</label>
+                                        <label for="form-contact-message" name="message" id="message">Your
+                                            message</label>
                                         <a class="btn-floating btn-lg " type="submit" name="submit">
                                             <i class="far fa-paper-plane"></i>
                                         </a>
@@ -196,10 +265,23 @@
                                 <p><i class="fas fa-map-marker-alt pr-2"></i>Nederland, Purmerend</p>
                             </li>
                             <li>
-                                <p><i class="fas fa-phone pr-2"></i><a href="tel:+31637404704">+ 31 6 37 40 47 04</a></p>
+                                <p><i class="fas fa-phone pr-2"></i><a href="tel:+31637404704" class="orange-color">+ 31
+                                    6 37 40 47
+                                    04</a>
+                                </p>
                             </li>
                             <li>
-                                <p><i class="fas fa-envelope pr-2"></i><a href="mailto:info@siteenservice.nl">info@siteenservice.nl</a></p>
+                                <p><i class="fas fa-envelope pr-2"></i><a href="mailto:info@siteenservice.nl"
+                                                                          class="orange-color">info@siteenservice.nl</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Kvk: 75614294
+                                </p>
+                            </li>
+                            <li>
+                                <p>Btw-Id: NL002416641B32
+                                </p>
                             </li>
                         </ul>
                         <hr class="hr-light my-4">
@@ -230,6 +312,8 @@
             </div>
         </div>
     </section>
+
+
 
     <footer class="page-footer font-small unique-color-dark">
 
