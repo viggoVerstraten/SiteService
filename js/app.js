@@ -42,12 +42,12 @@ addEvent(contact, contactPage);
 
 //burger navbar
 addEvent(homeBurger, 0);
-addEvent(servicesBurger, servicesPage);
-addEvent(projectsBurger, projectsPage);
-addEvent(partnersBurger, partnersPage);
-addEvent(contactBurger, contactPage);
+addEvent(servicesBurger, servicesPage, true);
+addEvent(projectsBurger, projectsPage, true);
+addEvent(partnersBurger, partnersPage, true);
+addEvent(contactBurger, contactPage, true);
 
-function addEvent(element, page){
+function addEvent(element, page, small){
 
     element.addEventListener('click', ()=>{
         window.scrollTo({
@@ -56,11 +56,14 @@ function addEvent(element, page){
         });
         navPage.classList.remove('opacity-1');
 
-        line1.classList.remove('turn-right');
-        line2.style.display = 'block';
-        line3.classList.remove('turn-left');
+        if (small === true){
+            line1.classList.remove('turn-right');
+            line2.style.display = 'block';
+            line3.classList.remove('turn-left');
+            expanded = !expanded
+        }
 
-        expanded = !expanded
+
 
     });
 
