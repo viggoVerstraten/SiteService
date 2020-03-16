@@ -108,7 +108,7 @@ linkedIn.addEventListener('click', ()=>{
 });
 
 whatsapp.addEventListener('click', ()=>{
-    window.open('https://api.whatsapp.com/send?phone=+31637404703&text=Dag%20Luke!')
+    window.open('https://api.whatsapp.com/send?phone=+31637404704&text=Dag%20Luke!')
 });
 
 facebook.addEventListener('click', ()=>{
