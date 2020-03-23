@@ -1,12 +1,12 @@
 .specialties{
     display: flex;
     flex-direction: column;
-    height: 30rem;
     background-color: black;
 }
 
 .service-grid{
     display: grid;
+    height: 25rem;
     grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
 }
 
@@ -14,7 +14,7 @@
     display: grid;
     background-color: #000000;
     grid-template-rows: 50% 50%;
-    height: 100%;
+    height: 90%;
     width: 100%;
     text-align: center;
     align-items: center;
@@ -35,9 +35,7 @@
 }
 
 @media screen and (max-width: 980px) {
-    .specialties{
-        height: 100rem;
-    }
+
 
     .first{
         height: 25rem;
@@ -50,6 +48,7 @@
 
     .service-grid{
         display: grid;
+        height: 80rem;
         grid-template-columns: 100%;
     }
 

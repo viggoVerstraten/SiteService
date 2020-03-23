@@ -19,7 +19,7 @@
 }
 
 .intro-photo{
-    height: 20rem;
+    height: auto;
     width: 35rem;
     margin: auto;
     box-shadow: 10px 10px #050505;
@@ -62,11 +62,12 @@
         max-width: 100%;
         align-items: center;
         text-align: center;
+        height: 20rem;
     }
 
     .intro-photo{
-        width: 80%;
-        height: 100%;
+        height: auto;
+        width: 25rem;
         margin: auto;
     }
 

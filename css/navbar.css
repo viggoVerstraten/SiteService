@@ -1,4 +1,4 @@
-.burger-line{
+.burger-line {
     background-color: #ff8904;
     color: white;
     list-style-type: none;
@@ -9,43 +9,45 @@
     align-items: center;
 }
 
-.burger-ul{
+.burger-ul {
     cursor: pointer;
     align-items: center;
     margin: 3vh 5vw 0 25vw;
 }
 
-.about-text{
+.about-text {
     margin-top: 20vh;
     font-size: 25px;
 }
 
-.nav-stick{
+.nav-stick {
     position: fixed;
     top: 0;
 }
 
-.burger-menu{
+.burger-menu {
     left: 0;
     position: fixed;
     top: 10%;
     width: 100%;
     height: 90vh;
-    opacity: 0;
     background-color: black;
     z-index: 20000000;
     overflow: hidden;
-    transition: visibility 2s, opacity 0.2s linear;
+    opacity: 0;
     visibility: hidden;
+    transition: visibility .2s, opacity .2s linear;
+
 }
 
-.opacity-1{
+.opacity-1 {
     opacity: 1;
     visibility: visible;
     transition: visibility .2s, opacity .2s linear;
 }
 
-.burger-li{
+
+.burger-li {
     margin-top: 50px;
     list-style-type: none;
     display: grid;
@@ -55,33 +57,45 @@
     overflow: no-display;
 }
 
-.turn-right{
-    -moz-transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
+.turn-right {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     transition: .3s ease;
 }
 
-.turn-left{
-    -moz-transform:rotate(-45deg);
-    -webkit-transform:rotate(-45deg);
+.turn-left {
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     transition: .3s ease;
-    transform: rotate(-45deg) translate(7px,-7px);
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
-@media screen and (max-width: 980px){
-    .nav-bar{
+@media screen and (max-width: 980px) {
+    .nav-bar {
         display: none;
     }
 
-    .burger-line{
+    .burger-line {
         display: flex;
         flex-direction: column;
         margin-left: 30%;
         transition: .3s ease;
     }
 }
+
 @media screen and (min-width: 980px) {
-    .burger-line{
+    .burger-line {
         display: none !important;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
