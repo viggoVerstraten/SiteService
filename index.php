@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
 
     $mailTo = "info@siteenservice.nl";
     $headers = "From: " . $mailFrom;
-    $txt = "Je hebt een email ontvangen van " . $name . ".\n\n" . $message.'telefoonnummer = '.$phonenumber;
+    $txt = "Je hebt een email ontvangen van " . $name . ".\n\n" . $message.'telefoonnummer = '.$phonenumber. " dit is afkomstig van www.siteenservice.nl";
 
     mail($mailTo, $subject, $txt, $headers);
     header("Location: index.html?mailsend");
