@@ -207,20 +207,20 @@
             <div class="row">
                 <div class="col-lg-8 contact-border">
                     <div class="card-body form">
-                        <form method="post" action="index.php">
+                        <form method="post" action="email.php">
                             <h3 class="mt-4"><i class="fas fa-envelope pr-2"></i>Write me:</h3>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="form-contact-name" class="form-control" name="form-contact-name">
+                                        <input type="text" id="form-contact-name" class="form-control" name="form-contact-name" required>
                                         <label for="form-contact-name" name="name" id="name" class="">Your
                                             name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="form-contact-email" class="form-control" name="form-contact-email">
-                                        <label for="form-contact-email" name="mail" id="mail" class="">Your
+                                        <input type="text" id="form-contact-email" class="form-control" name="form-contact-email" required>
+                                        <label for="form-contact-email" name="mail" id="mail"  class="">Your
                                             email</label>
                                     </div>
                                 </div>
@@ -229,7 +229,7 @@
 
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="form-contact-phone" class="form-control" name="form-contact-phone">
+                                        <input type="text" id="form-contact-phone" class="form-control" name="form-contact-phone" required>
                                         <label for="form-contact-phone" name="phone" id="phone" class="">Your
                                             phone</label>
                                     </div>
@@ -237,7 +237,7 @@
 
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="form-contact-company" class="form-control" name="form-contact-company">
+                                        <input type="text" id="form-contact-company" class="form-control" name="form-contact-company" required>
                                         <label for="form-contact-company" name="subject" id="subject" class="">Your
                                             Subject</label>
                                     </div>
@@ -249,7 +249,7 @@
                                 <div class="col-md-12">
                                     <div class="md-form mb-0">
                                     <textarea id="form-contact-message" class="form-control md-textarea"
-                                              rows="3"></textarea>
+                                              rows="3" required></textarea>
                                         <label for="form-contact-message" name="message" id="message">Your
                                             message</label>
                                         <a class="btn-floating btn-lg " type="submit" name="submit">
