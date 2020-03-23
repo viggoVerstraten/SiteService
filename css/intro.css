@@ -19,19 +19,19 @@
 }
 
 .intro-photo{
-    height: 10rem;
-    width: 26.25rem;
-    margin: 5% 5% 5% 0;
+    height: 20rem;
+    width: 35rem;
+    margin: auto;
     box-shadow: 10px 10px #050505;
 }
 
 .intro-text>p{
-    flex: 2;
+    width: 50%;
     padding: 50px;
 }
 
 .intro-text>img{
-    flex: 1;
+    width: 50%;
     height: 15rem;
 }
 
@@ -55,6 +55,18 @@
     .intro-text>img{
         width: 20rem;
         height: 12rem;
+        margin: auto;
+    }
+
+    .image-side{
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro-photo{
+        width: 80%;
+        height: 100%;
         margin: auto;
     }
 

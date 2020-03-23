@@ -28,10 +28,10 @@ var partnersBurger = document.getElementById('partners-burger');
 var contactBurger = document.getElementById('contact-burger');
 
 //scrollto Pageheigts
-var servicesPage = document.getElementById('services-page');
-var projectsPage = document.getElementById('projects-page');
-var partnersPage = document.getElementById('partners-page');
-var contactPage = document.getElementById('contact-page');
+var servicesPage = document.getElementById('services-border');
+var projectsPage = document.getElementById('projects-border');
+var partnersPage = document.getElementById('partners-border');
+var contactPage = document.getElementById('border-contact');
 
 //main navbar
 addEvent(home, 0);
@@ -51,7 +51,7 @@ function addEvent(element, page, small){
 
     element.addEventListener('click', ()=>{
         window.scrollTo({
-            top: page.offsetTop - 50,
+            top: page.offsetTop - window.innerHeight/10 ,
             behavior: "smooth"
         });
         navPage.classList.remove('opacity-1');
@@ -68,6 +68,7 @@ function addEvent(element, page, small){
     });
 
 }
+
 
 
 

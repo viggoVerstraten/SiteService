@@ -34,17 +34,11 @@
     height: 50%;
 }
 
-@media screen and   (max-width: 1100px) {
+@media screen and (max-width: 980px) {
     .specialties{
         height: 100rem;
     }
 
-    .first{
-        height: 30rem;
-    }
-}
-
-@media screen and (max-width: 980px) {
     .first{
         height: 25rem;
         grid-template-columns: 100%;
